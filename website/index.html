@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurmeet's Cloud Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>?? Gurmeet's Cloud Engineering Portfolio</h1>
+
+    <div class="container">
+        <h2>?? Live AWS Project</h2>
+        <p>This website is automatically deployed using <span class="aws-badge">CI/CD Pipeline</span></p>
+        <p>Hosted on <span class="aws-badge">AWS EC2</span> with <span class="aws-badge">S3</span> for static assets</p>
+    </div>
+
+    <h2>?? Project Features:</h2>
+    <ul>
+        <li>? EC2 Instance with Apache</li>
+        <li>? Custom Domain: gurmeetcloud.mooo.com</li>
+        <li>? HTTPS with SSL Certificate</li>
+        <li>? S3 Bucket for images</li>
+        <li>? CloudWatch Monitoring</li>
+        <li>? GitHub Actions CI/CD</li>
+    </ul>
+
+    <h2>?? Auto-Deployment</h2>
+    <p>Every time I push code to GitHub, this website updates automatically!</p>
+    <p>Last deployed: <span id="deploy-time"></span></p>
+
+    <div style="text-align: center; margin: 30px 0;">
+        <a href="https://github.com/YOUR_USERNAME/aws-personal-website" class="btn" target="_blank">View GitHub Repo</a>
+        <a href="#" class="btn" id="demo-btn">Click Me!</a>
+    </div>
+
+    <footer>
+        <p>Built by Gurmeet | <span id="current-year"></span> | Version 2.0 (CI/CD)</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Update deploy time
+        document.getElementById('deploy-time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
